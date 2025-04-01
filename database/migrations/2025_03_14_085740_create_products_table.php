@@ -15,11 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->decimal('price', 15, 5);
-            $table->decimal('discount', 8, 2); 
+            $table->decimal('price', 10, 2);
+            $table->decimal('discount', 5, 2)->default(0);
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
