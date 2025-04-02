@@ -38,8 +38,8 @@ class ProductController extends Controller
             'price' => $request->price,
             'discount' => $request->discount
         ]);
-
-        // return redirect()->route('products.index', compact('products')) ;
+         
+        return redirect()->route('products.index', compact('products')) ;
     }
 
     /**
